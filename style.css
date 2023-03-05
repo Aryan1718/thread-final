@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-container{
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(35deg,rgba(0,0,0,.1),rgba(0,0,0,.1));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    z-index: 1;
+    position: absolute;
+}
+.nav-container .logo{
+    width: 80px;
+
+    mix-blend-mode:multiply;
+}
+
+.nav-container .logo img{
+    width: 140px;
+    border-radius: 50%;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: black;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: .5s;
+    margin: 0 10px;
+}
+
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+
+/* styling for the clothing section */
+
+.clothing-section {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    
+  }
+  
+  .clothing-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top: 110px;
+  }
+  
+  .clothing-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .new-arrivals {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+  }
+  
+  .new-arrivals h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    position: relative;
+    width: calc(35% - 20px);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .product {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .product {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .product {
+      width: 100%;
+    }
+  }
+  
+  .product-image {
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+    padding: 20px;
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product:hover .product-image img {
+    transform: scale(1.1);
+  }
+  
+  .product:hover .product-overlay {
+    opacity: 1;
+  }
+  
+  .btn {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: #ffbe;
+  }
+  
+  
+  @media(max-width: 755px){
+    .nav-bar ul li a{
+        display: block;
+        color: white;
+        font-size: 15px;
+        padding: 10px 25px;
+        border-radius: 25px;
+        transition: .5s;
+        margin: 0 10px;
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 110px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3),rgba(31, 13, 13, 0.3));
+        transition: .5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 250px;
+        background-color: #fff;
+    }
+
+    .nav-bar ul{
+        display: block;
+        margin: 21px auto 0 auto;
+        text-align: center;
+        transition: .5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+}
