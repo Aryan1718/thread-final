@@ -454,8 +454,8 @@ img{
     display: block;
     width: 100%;
     height: auto;
-  }
-   */
+  } */
+  
    .new-arrivals {
     margin-bottom: 110px;
   }
@@ -532,7 +532,22 @@ img{
     text-transform: uppercase;
     }
 
+    @media (max-width: 499px) {
+      .products-container .product{
+        margin-bottom: 100px;
+      }
 
+    }
+    @media (max-width: 599px) {
+      .products-container .product{
+        margin-bottom: 100px;
+      }
+    }
+    @media (max-width: 799px) {
+      .products-container .product{
+        margin-bottom: 100px;
+      }
+    }
     
     /* @media (max-width: 768px) {
     .new-arrivals {
@@ -559,7 +574,7 @@ img{
       }
 
     } */
-    @media (max-width: 499px) {
+    /* @media (max-width: 499px) {
       .products-container {
         width: 350px;
       }
@@ -575,79 +590,79 @@ img{
     @media (max-width: 768px) {
       .new-arrivals {
         padding: 30px;
-        margin-bottom: 100px; /* Add margin to bottom to avoid overlap with footer */
+        margin-bottom: 100px; 
       }
       .product {
         width: 45%;
-        margin-right: 0; /* Remove margin-right to avoid overlapping products */
-        margin-bottom: 30px; /* Reduce margin-bottom for better spacing */
+        margin-right: 0; 
+        margin-bottom: 30px; 
       }
       .product-details {
-        text-align: center; /* Center product name and price */
+        text-align: center; 
       }
       .product-details h3 {
-        font-size: 18px; /* Reduce font size for better fit */
+        font-size: 18px; 
       }
       .product-image {
-        position: relative; /* Set position to relative to enable absolute positioning of overlay */
-        width: 100%; /* Set width to 100% to ensure image scales properly */
+        position: relative;
+        width: 100%; 
       }
       .product-overlay {
-        position: absolute; /* Set position to absolute to overlay button */
-        top: 50%; /* Position button in center */
+        position: absolute; 
+        top: 50%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0; /* Set opacity to 0 initially */
-        transition: opacity 0.3s ease; /* Add transition effect */
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
       }
       .product:hover .product-overlay {
-        opacity: 1; /* Set opacity to 1 on hover to show button */
+        opacity: 1; 
       }
       .btn-primary {
-        font-size: 14px; /* Reduce font size for better fit */
+        font-size: 14px; 
       }
     }
 
     @media (max-width: 1024px) {
       .new-arrivals {
         padding: 30px;
-        margin-bottom: 100px; /* Add margin to bottom to avoid overlap with footer */
+        margin-bottom: 100px; 
       }
       .product {
         width: 45%;
-        margin-right: 0; /* Remove margin-right to avoid overlapping products */
-        margin-bottom: 30px; /* Reduce margin-bottom for better spacing */
+        margin-right: 0; 
+        margin-bottom: 30px; 
         padding: 30px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow to cover image and provide depth */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
       }
       .product-details {
-        text-align: center; /* Center product name and price */
+        text-align: center;
       }
       .product-details h3 {
-        font-size: 18px; /* Reduce font size for better fit */
+        font-size: 18px; 
       }
       .product-image {
-        position: relative; /* Set position to relative to enable absolute positioning of overlay */
-        width: 100%; /* Set width to 100% to ensure image scales properly */
+        position: relative; 
+        width: 100%; 
         height: 300px;
         overflow: hidden;
         
       }
       .product-overlay {
-        position: absolute; /* Set position to absolute to overlay button */
-        top: 50%; /* Position button in center */
+        position: absolute; 
+        top: 50%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        opacity: 0; /* Set opacity to 0 initially */
-        transition: opacity 0.3s ease; /* Add transition effect */
+        opacity: 0; 
+        transition: opacity 0.3s ease; 
       }
       .product:hover .product-overlay {
-        opacity: 1; /* Set opacity to 1 on hover to show button */
+        opacity: 1; 
       }
       .btn-primary {
-        font-size: 14px; /* Reduce font size for better fit */
+        font-size: 14px; 
       }
-    }
+    } */
     
 
     footer {
