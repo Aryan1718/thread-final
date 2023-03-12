@@ -193,6 +193,11 @@ img{
     background: white;
 }
 
+.active{
+  color: black;
+  background: white;
+}
+
 /* styling for the clothing section */
 
 .clothing-section {
@@ -266,6 +271,14 @@ img{
     font-size: 1rem;
   }
 
+
+  .headline{
+    margin-left: 9.7rem;
+  }
+
+  .headline hr{
+    margin-left: 3rem;
+  }
   /* Product section styles */
 /* .new-arrivals {
   margin: 50px auto;
@@ -934,6 +947,7 @@ img{
         background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3),rgba(31, 13, 13, 0.3));
         transition: .5s;
         overflow: hidden;
+        margin-top: -1rem;
     }
     .nav-bar.active{
         height: 250px;
@@ -953,5 +967,6 @@ img{
     
     .nav-bar ul li a{
         margin-bottom: 12px;
+        color: black;
     }
 }
